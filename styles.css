@@ -1,0 +1,294 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(0, 0, 0); /* Black background */
+    color: white; /* White text */
+    font-family: 'Poppins', sans-serif; /* Font family */
+    scroll-behavior: smooth; /* Smooth scrolling behavior */
+}
+
+nav {
+    display: flex; /* Flexbox */
+    justify-content: space-around; /* Space around items */
+    align-items: center; /* Center items vertically */
+    height: 90px; /* Height of the navigation bar */
+    background-color: rgb(104, 104, 204); 
+    position: fixed; /* Fixed position at the top */
+    width: 100%; /* Full width */
+    top: 0; /* Align to the top */
+    z-index: 1000; /* Higher stacking order */
+}
+
+nav ul {
+    display: flex; /* Flexbox */
+}
+
+nav li {
+    list-style: none; /* Remove default list style */
+    margin: 0 30px; /* Margin around each list item */
+}
+
+nav li a {
+    text-decoration: none; /* Remove underline */
+    color: white;
+}
+
+.left {
+    font-size: 1.5rem;
+}
+section {
+    padding-top: 100px; /* Adds padding to the top of each section */
+}
+
+#home {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;/*animation*/
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.social-links {
+    margin-top: 20px; /* Adjust spacing as needed */
+}
+
+.social-links a {
+    display: inline-block;
+    margin-right: 10px; /* Adjust spacing between icons */
+}
+
+.social-links img {
+    width: 30px; /* Adjust size of social media icons */
+    height: auto;
+    transition: transform 0.3s ease-in-out; /* Add a hover effect */
+}
+
+.social-links img:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+/* About Me section */
+#about {
+    width: 100%; /* Full width */
+    padding: 20px 0; /* Padding */
+}
+
+#about table {
+    width: 90%; /* 90% width */
+    margin: auto; /* Center align */
+    border: none;
+}
+
+#about td {
+    padding: 25px; /* Padding for table cells */
+    height: 150px; /* Height of table cells */
+}
+
+#about img {
+    width: 100%; /* Full width image */
+    max-width: 200px; /* Maximum width */
+    border: 3px solid #6868cc;
+}
+/* CSS for image hover animation */
+#about img {
+    transition: transform 0.3s ease-in-out;
+}
+
+#about img:hover {
+    transform: scale(1.1);
+}
+
+
+#about hr {
+    border: 0; 
+    border-top: 1px solid #000000; 
+    margin: 20px 0; /* Margin */
+}
+
+#about h1 {
+    font-size: 50px; /* Heading font size */
+    color: #6868cc; 
+    text-align: center; /* Center align */
+}
+
+#about p {
+    margin: 10px 0; /* Margin for paragraphs */
+    line-height: 1.6; 
+}
+
+/* Styling for the project card container */
+.project-card {
+    display: inline-flex; /* Displaying cards in a horizontal flex container */
+    width: 100%; 
+    border-radius: 8px;
+    overflow: hidden; /* Hiding overflow content */
+    margin-bottom: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding shadow */
+}
+
+/* Styling for images within the project card */
+.project-card img {
+    width: 100%; /* Ensuring the image takes full width of the card */
+    height: auto; /* Maintaining aspect ratio */
+    display: block; /* Displaying the image as a block element */
+    border-bottom: 1px solid #ccc;
+}
+
+/* Container for project information */
+.project-info {
+    padding: 15px; 
+}
+
+/* Styling for project title */
+.project-info h3 {
+    font-size: 1.5rem; 
+    margin-bottom: 10px; 
+}
+
+/* Styling for project description */
+.project-info p {
+    font-size: 1rem;
+    color: #ffffff; 
+    margin-bottom: 10px; 
+}
+
+/* Styling for the project link button */
+.project-link {
+    display: inline-block; /* Displaying the link as an inline-block element */
+    background-color: #6868cc; 
+    color: #fff; 
+    text-decoration: none; /* Removing underline from the link */
+    padding: 8px 16px; 
+    border-radius: 4px; 
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+/* Hover effect for the project link button */
+.project-link:hover {
+    background-color: #4f4f9e; 
+}
+
+/* Styling for the contact section */
+#contact {
+    background-color: black; 
+}
+
+/* Container for the contact form */
+.contact-container {
+    background: linear-gradient(135deg, #6868cc, #000); /* Gradient background */
+    padding: 30px; 
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    animation: slideIn 1s ease-out; /* Slide-in animation */
+    max-width: 500px; 
+    width: 100%; /* Full width */
+    color: #fff; 
+    margin: 20px auto; /* Centering the container with margin */
+}
+
+/* Styling for the contact form header */
+.contact-container h2 {
+    text-align: center; 
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-out; /* Fade-in animation */
+}
+
+/* Styling for form groups */
+.form-group {
+    margin-bottom: 15px; 
+}
+
+/* Styling for labels in the contact form */
+.contact-container label {
+    display: block; /* Displaying labels as block elements */
+    font-weight: bold; /* Making text bold */
+    margin-bottom: 5px; /* Space below the label */
+    animation: fadeIn 1s ease-out; /* Fade-in animation */
+}
+
+/* Styling for input fields and textarea in the contact form */
+.contact-container input[type="text"],
+.contact-container input[type="email"],
+.contact-container textarea {
+    width: calc(100% - 20px); 
+    padding: 10px; /* Padding inside the input/textarea */
+    margin: 0 10px; 
+    border: none;
+    border-radius: 5px; 
+    box-sizing: border-box; /* Ensuring padding is included in the width */
+    animation: fadeIn 1s ease-out; /* Fade-in animation */
+}
+
+/* Styling for the submit button */
+.contact-container button {
+    background-color: #007bff; 
+    color: #fff; 
+    border: none; 
+    padding: 10px 20px; /* Padding around the button */
+    cursor: pointer; 
+    border-radius: 5px;
+    width: 100%; 
+    font-size: 16px;
+    margin-top: 20px; 
+    animation: fadeIn 1s ease-out; /* Fade-in animation */
+}
+
+/* Hover effect for the submit button */
+.contact-container button:hover {
+    background-color: #0056b3; 
+}
+
+/* Active state for the submit button */
+.contact-container button:active {
+    transform: translateY(1px); /* Slightly move the button down on click */
+}
+
+/* Slide-in animation */
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px); /* Starting position */
+        opacity: 0; /* Starting opacity */
+    }
+    to {
+        transform: translateY(0); /* Ending position */
+        opacity: 1; /* Ending opacity */
+    }
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0; 
+    }
+    to {
+        opacity: 1; 
+    }
+}
+
+/* CV button styling */
+.cv-button {
+    text-align: center; 
+    margin-top: 20px; 
+}
+
+.cv-button a {
+    display: inline-block; /* Inline block display */
+    padding: 10px 20px; 
+    background-color: #007BFF; 
+    color: white;
+    text-decoration: none; 
+    border-radius: 5px; 
+}
+
+.cv-button a:hover {
+    background-color: #0056b3; /* Darker background on hover */
+}

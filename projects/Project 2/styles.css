@@ -1,0 +1,103 @@
+/* Resetting default margin, padding, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container styling */
+.container {
+    background-color: #e5e5fd; 
+    min-height: 100vh; /* Minimum height */
+    border: 10px solid #1D1E4C; 
+}
+
+/* Content within the container */
+.content {
+    max-width: 900px; /* Maximum width */
+    margin: 0 auto; /* Center align horizontally */
+}
+
+/* Styling for image container and image */
+.image-container, img {
+    width: 300px; /* Image width */
+    height: 320px; /* Image height */
+}
+
+/* Circular image container */
+.image-container {
+    border-radius: 50%; /* Rounded border */
+    overflow: hidden; /* Hide overflow */
+}
+
+/* Top section styling */
+.top {
+    margin-top: 100px; /* Top margin */
+    display: flex; /* Flexbox */
+    justify-content: space-between;
+    align-items: flex-end; /* Align items at the bottom */
+}
+
+/* Styling for name heading */
+.top h1 {
+    font-size: 45px;
+    font-weight: bold; 
+    color: #1d1e4c;
+    text-transform: uppercase; /* Uppercase text */
+}
+
+/* Styling for lifespan subheading */
+.top h4 {
+    text-align: end; /* Right align */
+    font-size: 30px; 
+}
+
+/* About section styling */
+.about {
+    margin-top: 50px;
+}
+
+/* Heading for about section */
+.about h2 {
+    font-size: 70px;
+    font-weight: 400; 
+    margin-bottom: 20px; 
+}
+
+/* Paragraph styling in about section */
+.about p {
+    font-size: 20px;
+    line-height: 30px; 
+    letter-spacing: 1.2px; /* Letter spacing */
+    text-align: justify; /* Justify text */
+}
+
+/* Biography section styling */
+.biography {
+    margin-top: 50px; 
+}
+
+/* Heading for biography section */
+.biography h3 {
+    margin-bottom: 20px;
+}
+
+/* Styling for biography list */
+.biography ul {
+    margin-left: 50px; 
+}
+
+/* Styling for each item in biography list */
+.biography li {
+    margin-bottom: 15px; 
+}
+
+/* Footer styling */
+footer {
+    margin: 50px 0; /* Margin top and bottom */
+}
+
+/* Paragraph in footer */
+footer p {
+    text-align: end; 
+}
